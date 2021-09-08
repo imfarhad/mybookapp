@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BookList from './BookList';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
 const App = () => {
   const initialBooks = [];
@@ -24,4 +25,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
