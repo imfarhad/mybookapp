@@ -21,6 +21,7 @@ const App = () => {
       <input type="text" id="book" />
       <input type="button" id="addBook" value="Add Book" onClick={onAddBook} />
       <BookList books={books} onBookItemClick={onDoubleClick} />
+      <AmplifySignOut/>
     </div>
   );
 }
